@@ -10,7 +10,7 @@ var iTunesApp_tpl = '' +
 '</div>';
 
 
-$(function(){
+(function($) {
 
   $('[data-itunesid]').each(function(i, elm) {
     var $this = $(this);
@@ -21,7 +21,7 @@ $(function(){
     });
   });
 
-});
+})(jQuery);
 
 function iTunesApp_getItunesData(appID, callback) {
   console.log('iTunesApp_getItunesData', appID);
