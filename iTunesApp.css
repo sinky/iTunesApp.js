@@ -1,0 +1,43 @@
+.iTunesApp {
+  overflow: auto;
+  margin-bottom: 1em;
+}
+
+.iTunesApp .iTunesApp-head {
+  overflow: auto;
+  margin-bottom: 5px;
+}
+
+.iTunesApp .iTunesApp-name {
+  display: block;
+  line-height: 1.5em;
+}
+
+.iTunesApp .iTunesApp-icon {
+  float:left;
+  margin-right: 5px;
+}
+
+.iTunesApp .iTunesApp-icon img {
+  max-width: 50px;
+  height: auto;
+}
+
+.iTunesApp .iTunesApp-price:before {
+  content: " - ";
+}
+
+.iTunesApp .iTunesApp-preview {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.iTunesApp .iTunesApp-preview img {
+  max-width: 150px;
+  vertical-align: middle;
+}
+
+.iTunesApp .iTunesApp-preview a + a,
+.iTunesApp .iTunesApp-preview img + img {
+  margin-left: 5px;
+}
