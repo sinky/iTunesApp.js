@@ -10,7 +10,6 @@
 
 .iTunesApp .iTunesApp-name {
   display: block;
-  line-height: 1.5em;
 }
 
 .iTunesApp .iTunesApp-icon {
@@ -30,6 +29,7 @@
 .iTunesApp .iTunesApp-preview {
   white-space: nowrap;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .iTunesApp .iTunesApp-preview img {
