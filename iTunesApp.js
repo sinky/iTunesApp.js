@@ -40,7 +40,7 @@
 
     var $itunesLink = $('<a class="link itunes"/>').attr('href', app.trackViewUrl).attr('target', '_blank');
     
-    if(typeof iTunesApp_AffiliateID != "undefined") {
+    if(typeof iTunesApp_AffiliateID != "undefined" && iTunesApp_AffiliateID != "") {
       $itunesLink.attr('href', $itunesLink.attr('href') + '&at=' + iTunesApp_AffiliateID);
     }
     
