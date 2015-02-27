@@ -1,5 +1,5 @@
 # iTunesApp.js
-iTunes App html/js Widget w/ ajax
+iTunes App Preview html/js w/ ajax
 
 # Demo
 http://jsfiddle.net/sinky/qpb2sfgf/
