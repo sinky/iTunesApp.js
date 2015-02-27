@@ -39,6 +39,11 @@
     $entry.find('.iTunesApp-name').text(app.trackName);
 
     var $itunesLink = $('<a class="link itunes"/>').attr('href', app.trackViewUrl).attr('target', '_blank');
+    
+    if(iTunesApp_AffiliateID) {
+      $itunesLink.attr('href', $itunesLink.attr('href') + '&at=' + iTunesApp_AffiliateID);
+    }
+    
     $entry.find('.iTunesApp-name').wrapInner($itunesLink);
     $entry.find('.iTunesApp-icon').wrap($itunesLink);
     
