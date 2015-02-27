@@ -5,4 +5,4 @@ iTunes App html/js Widget w/ ajax
 http://jsfiddle.net/sinky/qpb2sfgf/
 
 # License
-http://marco.mit-license.org
+MIT http://marco.mit-license.org
