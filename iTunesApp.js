@@ -11,14 +11,19 @@
   '  <div class="iTunesApp-preview"></div>' +
   '</div>';
 
-  $('[data-itunesid]').each(function(i, elm) {
-    var $this = $(this);
-    var id = $this.attr('data-itunesid');
-    iTunesApp_getItunesData(id, function(data) {
-      var $that = $this;
-      iTunesApp_UpdateLayout($that, data);
+  function iTunesApp_init() {
+    $('[data-itunesid]').each(function(i, elm) {
+      var $this = $(this);
+      var id = $this.attr('data-itunesid');
+      iTunesApp_getItunesData(id, function(data) {
+        var $that = $this;
+        iTunesApp_UpdateLayout($that, data);
+      });
     });
-  });
+  }
+  
+  iTunesApp_init();
+  window.iTunesApp_init = iTunesApp_init;
 
   function iTunesApp_getItunesData(appID, callback) {
     console.log('iTunesApp_getItunesData', appID);
