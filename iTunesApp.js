@@ -65,6 +65,7 @@
     $entry.find('.iTunesApp-price').text(app.formattedPrice);
     
     $.each(app.screenshotUrls, function(i, screenshotUrl){
+      screenshotUrl = screenshotUrl.replace('320x320', '640x640');
       var $previewImage = $('<img/>').attr('src', screenshotUrl);
       $entry.find('.iTunesApp-preview').append($previewImage);
       $previewImage.wrap($('<a target="_blank"/>').attr('href', screenshotUrl));
