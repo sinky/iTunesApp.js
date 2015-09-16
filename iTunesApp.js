@@ -59,7 +59,7 @@
       $entry.find('.iTunesApp-artist').wrapInner($webLink);
     }
     
-    var $icon = $('<img />').attr('src', app.artworkUrl512.replace('.png', '.128x128-75.png').replace('.jpg', '.128x128-75.jpg'));
+    var $icon = $('<img />').attr('src', app.artworkUrl100);
     $entry.find('.iTunesApp-icon').append($icon);
 
     $entry.find('.iTunesApp-price').text(app.formattedPrice);
